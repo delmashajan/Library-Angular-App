@@ -4,127 +4,27 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of books" >
                     <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/61isRprUQ+L.jpg" class="card-img-top" alt="...">
+                        <img height="200px" width="200px"  src={{i.image}} class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Pathummayude Aadu</h5>
-                          <p class="card-text">Author:Vaikom Muhammad Basheer</p>
-                          <p class="card-text">Language:Malayalam</p>
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">Author:{{i.author}}</p>
+                          <p class="card-text">Language:{{i.language}}</p>
                           
                           
                         </div>
                       </div>
                 </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/71KKZlVjbwL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Wings Of Fire</h5>
-                          
-                          <p class="card-text">Author:A P J Abdul Kalam</p>
-                          <p class="card-text">Language:English</p>
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/51GtJOp1OtL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">My Experiments With Truth</h5>
-                          <p class="card-text">Author:M.K.Gandhi</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://upload.wikimedia.org/wikipedia/en/4/46/My_Story_Kamala_Das.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">My Story</h5>
-                          <p class="card-text">Author:Kamala Das</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://i1.sndcdn.com/artworks-000190305150-obffpa-t500x500.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Khasakkinte Ithihasam</h5>
-                          <p class="card-text">Author:O.V.Vijayan</p>
-                          <p class="card-text">Language:Malayalam</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Ikigai</h5>
-                          
-                          <p class="card-text">Author:Hector Gracia</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/71C0gE7b0XL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">It End With Us</h5>
-                          <p class="card-text">Author:Colleen Hoover</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/81fxf8EaTgL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">I Too Had A Love Story</h5>
-                          <p class="card-text">Author:Ravinder Singh</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://m.media-amazon.com/images/I/81FummIc2eL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">It Start With Us</h5>
-                          <p class="card-text">Author:Colleen Hoover</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="200px" width="200px" class="rounded-circle mx-auto" src="https://kbimages1-a.akamaihd.net/a5eda7b7-9f36-451c-9459-7faa1205bff7/1200/1200/False/like-it-happened-yesterday-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Like It Happened Yesterday</h5>
-                          <p class="card-text">Author:Ravinder Singh</p>
-                          <p class="card-text">Language:English</p>
-                          
-                          
-                        </div>
-                      </div>
-                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
             </div>
