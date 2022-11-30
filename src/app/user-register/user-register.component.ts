@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-register',
@@ -18,6 +19,8 @@ export class UserRegisterComponent {
   password=""
   confirmpassword=""
 
+  constructor(private route:Router){}
+
   readValue=()=>
   {
     let data:any={
@@ -32,6 +35,7 @@ export class UserRegisterComponent {
     }
 
     console.log(data)
+    
   }
 
 
