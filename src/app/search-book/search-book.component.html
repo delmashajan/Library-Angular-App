@@ -13,6 +13,28 @@
                     <button (click)="readValue()" class="btn btn-danger">SEARCH</button>
                 </div>
             </div>
+
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of searchData" >
+                    <div class="card" >
+                        <img height="200px" width="200px"  src={{i.image}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">Author:{{i.author}}</p>
+                          <p class="card-text">Language:{{i.language}}</p>
+                          <p class="card-text">price:{{i.price}}</p>
+                          
+                          
+                        </div>
+                      </div>
+                      
+                </div>
+
+                
+   
+                
+            </div>
+
         </div>
     </div>
 </div>
