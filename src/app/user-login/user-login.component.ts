@@ -25,7 +25,7 @@ export class UserLoginComponent {
       
     } else {
 
-      alert("Invalid credentials")
+      alert("valid credentials")
       
     }
   }
