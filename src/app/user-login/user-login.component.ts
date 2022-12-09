@@ -19,9 +19,9 @@ export class UserLoginComponent {
       "password":this.password,"username":this.username
     }
     console.log(data)
-    if (this.username=="admin" && this.password=="12345") {
+    if (this.username=="delma.shajan" && this.password=="12345") {
 
-      this.route.navigate(['/entry'])
+      this.route.navigate(['/userview'])
       
     } else {
 

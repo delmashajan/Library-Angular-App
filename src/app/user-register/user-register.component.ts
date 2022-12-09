@@ -35,6 +35,18 @@ export class UserRegisterComponent {
     }
 
     console.log(data)
+
+    if(this.password==this.confirmpassword){
+      alert("registered successfully")
+      this.name=""
+      this.pincode=""
+      this.dob=""
+      this.email=""
+      this.phone=""
+      this.username=""
+      this.password=""
+      this.confirmpassword=""
+    }
     
   }
 

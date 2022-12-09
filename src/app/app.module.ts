@@ -16,6 +16,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { Navbar1Component } from './navbar1/navbar1.component';
+import { UserViewComponent } from './user-view/user-view.component';
+import { UserSearchComponent } from './user-search/user-search.component';
 
 
 const myRoute:Routes=[
@@ -54,6 +57,14 @@ const myRoute:Routes=[
   {
     path:"issue",
     component:IssueBookComponent
+  },
+  {
+    path:"usersearch",
+    component:UserSearchComponent
+  },
+  {
+    path:"userview",
+    component:UserViewComponent
   }
 ]
 
@@ -69,7 +80,10 @@ const myRoute:Routes=[
     DeleteBookComponent,
     EditBookComponent,
     IssueBookComponent,
-    NavbarComponent
+    NavbarComponent,
+    Navbar1Component,
+    UserViewComponent,
+    UserSearchComponent
   ],
   imports: [
     BrowserModule,
